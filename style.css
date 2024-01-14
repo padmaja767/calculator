@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #92cad9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: hsl(263, 21%, 69%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.calculator-display {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+
+}
+
+.buttons input {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #f1d4d4;
+    border-radius: 10px; /* Rounded corners */
+    padding: 5px 0; /* Add some padding for a better appearance */
+    transition: background 0.3s;
+}
+.buttons input:active {
+    background: #c0c0c0; /* Change to a slightly lighter shade for the highlight effect */
+}
+
+.clear-button {
+    grid-column: span 2;
+    background: #ff6b6b;
+    color: white;
+    transition: background 0.3s; /* Smooth transition for background color change */
+}
+
+/* Highlight effect for the "AC" button when clicked */
+.clear-button:active {
+    background: #ff4c4c; /* Change to a slightly lighter shade for the highlight effect */
+}
